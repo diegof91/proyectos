@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Interfaz</title>
+  <script src="js/jquery.js"></script>
+  <script src="js/functions.js"></script>
+  <script src="js/estructuraDatos.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/stylesForm.css" />
+
+</head>
+
+<body>
+  <div id="contenedor">
+    <div id="cabezal" class="clearfix">
+      <div id="txtSocioActivo"></div>
+      <ul id="navPrincipal">
+        <li>
+          <a id="usuario">Usuario</a>
+        </li>
+        <li>
+          <a id="administrador">Administrador</a>
+        </li>
+      </ul>
+      <div id="aux">
+        <div id="subMenuFuncionarior" class="submenu">
+          <a id="cerrarSesion">Cerrar sesión |</a>
+          <a id="linkRegistroUser">Registrarse</a>
+        </div>
+      </div>
+    </div>
+    <div id="registro">
+      <form class="formulario">
+        <h1>REGISTRO DE SOCIO</h1>
+        <div>
+          <h5>Nombre completo:</h5>
+          <input type="text" id="nombre" />
+        </div>
+        <div>
+          <h5>Email:</h5>
+          <input type="text" id="mail" placeholder="nombre@gmail.com" />
+        </div>
+        <div>
+          <h5>Contraseña:</h5>
+          <input type="password" id="contraseña" placeholder="abc123" />
+        </div>
+        <div>
+          <input type="password" placeholder="Repetir contraseña" id="repContra" />
+          <h6>La contraseña debe contener mínimo un número y una letra.</h6>
+        </div>
+        <input type="button" value="REGISTRAR USUARIO" class="button" id="registrarUsuario" />
+      </form>
+    </div>
+    <div id="loginUser">
+      <form class="formulario">
+        <h1>INGRESO USUARIO</h1>
+        <div>
+          <h5>Email:</h5>
+          <input type="text" id="emailIngreso" />
+        </div>
+        <div>
+          <h5>Contraseña:</h5>
+          <input type="password" id="contraIngreso" />
+        </div>
+        <input type="button" value="INGRESAR" class="button" id="ingresoUser" />
+      </form>
+    </div>
+    <div id="loginAdmin">
+      <form class="formulario">
+        <h1>INGRESO COMO ADMINISTRADOR</h1>
+        <div>
+          <h5>Nombre administrador:</h5>
+          <input type="text" id="nombreAdmin" />
+        </div>
+        <div>
+          <h5>Contraseña:</h5>
+          <input type="password" id="contraAdmin" />
+        </div>
+        <input type="button" value="INGRESAR" class="button" id="ingresoAdmin" />
+      </form>
+    </div>
+    <div id="userGest" class="formulario">
+      <div id="cambiarContra">
+        <h1>CAMBIAR CONTRASEÑA</h1>
+        <div>
+          <h5>Contraseña nueva:</h5>
+          <input type="password" id="contrNueva" placeholder="abc123" />
+        </div>
+        <div>
+          <input type="password" placeholder="Repetir contraseña" id="repContraNueva" />
+        </div>
+        <h6>La contraseña debe contener mínimo un número y una letra.</h6>
+        <input type="submit" value="CAMBIAR CONTRASEÑA" class="button" id="cambiarContraUs" />
+      </div>
+      <div id="crearEquipo">
+        <h1>CREAR EQUIPO</h1>
+        <div>
+          <h5>Nombre equipo:</h5>
+          <input type="text" id="nombreEquipo">
+          <h6>El nombre del equipo solo puede contener letras y no puede contener espacios</h6>
+          <input type="file">
+        </div>
+        <input type="button" value="CREAR EQUIPO" class="button" id="crearNuevoEquipo" />
+      </div>
+      <div id="cambiarEquipo">
+        <h1>ELEGIR O CAMBIAR DE EQUIPO</h1>
+        <select id="queHacerEq" class="selectOpc">
+          <option>Seleccione una opción</option>
+          <option value="asignarse">Asignarse a un equipo</option>
+          <option value="abandonarEquipo">Abandonar equipo actual</option>
+        </select>
+        <div id="seleccionarEquipos">
+          <h5>Seleccione un equipo:</h5>
+          <select id="selEquipos" class="selectOpc" name="equipos">
+          </select>
+          <h6>El máximo de cada equipo es de tres socios.</h6>
+        </div>
+        <input type="button" class="button" value="CONFIRMAR" id="asignarseEq" />
+      </div>
+      <div id="inscribirEquipo">
+        <h1>INSCRIBIR EQUIPO A COMPETENCIA</h1>
+        <input type="button" class="button" value="COMPETENCIAS DISPONIBLES" id="cargarEnSelect" />
+        <div id="divSelCompetencias">
+          <select class="selectOpc" id="competencias">
+          </select>
+          <h6>Para inscribir al equipo debe tener tres socios hablitados.</h6>
+          <input type="button" value="INSCRIBIR EQUIPO" class="button" id="inscribir" />
+        </div>
+        <div id="reporteSocio">
+          <h1>OBTENER REPORTE</h1>
+          <div id=tablaSocioReporte></div>
+          <input type="button" class="button" value="REPORTE" id="btnReporteSocio">
+          <input type="button" class="button" value="FINALIZAR REPORTE" id="btnFinalizarReporteSocio">
+        </div>
+      </div>
+    </div>
+    <div id="adminGest" class="formulario">
+      <div id="cambioPassword">
+        <h1>CREAR COMPETENCIA</h1>
+        <h5>Nombre competencia:</h5>
+        <input type="text" id="nombreCompetencia" />
+        <h6>El nombre de la competencia debe ser único y no debe contener espacios.</h6>
+        <input type="button" value="CREAR COMPETENCIA" class="button" id="crearCompetencia" />
+      </div>
+      <div id="habInhab">
+        <h1>HABILITAR/INHABILITAR SOCIOS</h1>
+        <select class="selectOpc" id="estadoSocio">
+          <option>Seleccione una opción</option>
+          <option value="habilitado">Habilitar</option>
+          <option value="inhabilitado">Inhabilitar</option>
+        </select>
+        <div id="elegirSocio">
+          <select class="selectOpc" id="socioSel">
+          </select>
+        </div>
+        <input type="button" value="CONFIRMAR" class="button" id="confirmarEstado" />
+      </div>
+      <div id="generarResultados">
+        <h1>GENERAR RESULTADOS</h1>
+        <input type="button" class="button" value="CARGAR COMPETENCIAS ABIERTAS" id="cargarCompetenciasAbiertas">
+        <div id="divMostrarCompetencias">
+          <select class="selectOpc" id="competenciasAdmin">
+            <input type="button" class="button" id="btnConfirmarIngreso" value="INGRESAR DATOS">
+          </select>
+        </div>
+        <div id="divEquiposComponenCompetencia">
+          <h3 id="txtCompSelecIngresoDatos"></h3>
+          <select class="selectOpc" id="selEquiposCompetencia">
+          </select>
+        </div>
+        <div id="tablaSocios">
+          <h3 id="socio1"></h3> <input type="number" id="metrosSocio1" placeholder="Ingrese metros del participante" />
+          <h3 id="socio2"></h3> <input type="number" id="metrosSocio2" placeholder="Ingrese metros del participante" />
+          <h3 id="socio3"></h3> <input type="number" id="metrosSocio3" placeholder="Ingrese metros del participante" />
+          <h6>Los metros a ingresar deben ser múltiplos de 50 y en el utlimo caso puede ser de 25.</h6>
+          <input type="button" class="button" value="INGRESAR DATOS" id="ingresarDatos" />
+          <input type="button" class="button" value="FINALIZAR INGRESO DE DATOS" id="finalizarIngresoDatos" />
+        </div>
+        <div id="divTablaFinalizarCompSocios"></div>
+        <div id="divTablaFinalizarCompEquipos"></div>
+        <input type="button" class="button" value="FINALIZAR" id="finalizarReporteComp" />
+      </div>
+      <div id="divEquiposReporte">
+        <h1>REPORTES</h1>
+        <input type="button" class="button" value="CARGAR EQUIPOS" id="btnCargarEquiposReporte" />
+        <div id="divSelectEquiposReporte">
+          <select class="selectOpc" id="selEquiposAdminReporte">
+          </select>
+          <input type="button" class="button" value="OBTENER REPORTE" id="obtenerReporte" />
+        </div>
+        <div id="divTablaEquipo">
+          <div id='tablaEquipoReporteParteA'></div>
+          <!--aqui se muestra las competencias y metros totales -->
+          <br>
+          <div id='tablaEquipoReporteParteB'></div>
+          <!--aqui se muestra los socios -->
+          <br>
+          <div id='tablaEquipoReporteParteC'></div>
+          <!--aqui se muestra el imgLogo -->
+        </div>
+        <input type="button" class="button" value="CERRAR REPORTE" id="cerrarReporte" />
+      </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+@font-face{
+  font-family: Lato;
+  src: url(Lato-Light.ttf);
+}
+@font-face{
+  font-family: LatoBlack;
+  src: url(Lato-Black.ttf);
+}
+@font-face{
+  font-family: LatoMedium;
+  src: url(Lato-Medium.ttf);
+}
+
+body {
+  font-family: LatoBlack, LatoMedium;
+  background: #73b1a8;
+}
+
+input{
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.formulario{
+  padding: 3px;
+  margin: auto;
+  width: 400px;
+}
+
+h6{
+  margin: inherit;
+  font-family: Lato;
+  font-size: 13px;
+
+}
+h5{
+  margin: inherit;
+  margin-bottom: 5px;
+  font-family: Lato;
+  font-size: 15px;
+}
+h1{
+  text-align: center;
+  color: #0d443c;
+  font-size: 20px;
+  margin-top: 40px;
+  text-decoration: underline;
+  padding: 15px;
+
+}
+input.completar {
+  font-size: 15px;
+  font-family: Lato;
+  padding: 10px;
+  border: none;
+
+}
+input {
+  font-size: 15px;
+  font-family: Lato;
+  padding: 10px;
+  border: none;
+
+}
+.button {
+  border: none;
+  color: white;
+  font-family: LatoMedium;
+  font-size: 15px ;
+  background: #325c55;
+  cursor: pointer;
+  padding: 15px 20px;
+  width: 70%;
+  border-radius: 5px;
+  margin-left: 18%;
+  margin-top: 10px;
+}
+.icon {
+  color: #55837d;
+  min-width: 50px;
+  text-align: center;
+}
+p{
+  text-align: center;
+  font-size: 14px;
+}
+.link {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  color: #325c55
+}
+.selectOpc {
+  font-size: 15px;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 13px;
+}
