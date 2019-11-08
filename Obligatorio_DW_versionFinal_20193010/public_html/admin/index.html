@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Ingresar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Pow!Ticket" content="Venta de tickets online">
+        <meta name="keywords" content="pow, pow!, Pow!Ticket, Pow!Ticket, ticket, espectaculo, concierto, deporte, conferencia, noticia">
+        <!-- ENLACES A ARCHIVOS-->
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="seccionIngresar">
+            <h1 id="ingresarLogin">INGRESAR</h1>
+            <p>Todos los campos son obligatorios</p>
+            <figure>
+                <img src="img/logo.png">
+            </figure>
+            <form action="listado.html"> <!-- SI AGREGO method="post" NO FUNCIONA, POSIBLEMENTE PORQUE NO HAY TRANSIMSION DE DATA-->
+                <fieldset id="fieldset1">
+                    <label for="inp1" class="label">Usuario</label>
+                    <input type="text" id="inp1" placeholder="Nombre de usuario" required="required">
+                    <label for="inp2" class="label">Contraseña</label>
+                    <input type="password" id="inp2" placeholder="Contraseña" required="required">
+                    <input type="checkbox" name="Recordar datos" id="cb1">
+                    <label for="cb1" id='cb1Label'>Recordar datos</label>
+                    <input type="submit" id="btnLogin" value="Ingresar">
+                </fieldset>
+            </form>
+        </section>
+    </body>
+</html>

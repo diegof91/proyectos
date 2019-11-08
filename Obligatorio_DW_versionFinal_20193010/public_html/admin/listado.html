@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pow!Ticket - Eventos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="pow, pow!, Pow!Ticket, Pow!Ticket, ticket, espectaculo, concierto, deporte, conferencia, noticia">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet"
+    </head>
+    <body>
+        <header class="hdrListYCrEv">
+            <figure id="logo">
+                <img id="ilogo" src="img/logo.png" alt="Logo PowTicket" title="PowTicket">
+                <!--figcaption>PowTicket</figcaption-->
+            </figure>
+            <nav>
+                <p>Hola,<strong>Nombre de Usuario</strong></p>
+                <ul>
+                    <li><a href=../index.html>Salir</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <nav class="menuVertical">
+                <ul>
+                    <li><a href="#">DASHBOARD</a></li>
+                </ul>
+                <ul>
+                    <li><a href=CrearEvento.html>CREAR EVENTOS</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#" class="activo">LISTADO DE EVENTOS</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">REPORTES</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">DESTACADOS</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">AGENTES DE VENTA</a></li>
+                </ul>
+            </nav>
+        </main>
+        <section id="seccTabla">
+            <p>Administrador>Listado de Eventos</p>
+            <h1>LISTADO DE EVENTOS</h1>
+            <nav>
+                <ul id="agregarEvento">
+                    <li><a href="#">AGREGAR EVENTOS</a></li>
+                </ul>
+            </nav>
+            <form id="input">
+                <input type="search" placeholder="FILTRAR" id="topInput">
+            </form>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Codigo</th>
+                        <th>Nombre del evento</th>
+                        <th>Organizador</th>
+                        <th>Lugar</th>
+                        <th>Dia</th>
+                        <th>Hora</th>
+                        <th>Precio (desde)</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="inpar">
+                        <td>00001</td>
+                        <td>Andres Calamaro</td>
+                        <td>Antel</td>
+                        <td>Antel Arena</td>
+                        <td>02/11/2019</td>
+                        <td>21:00</td>
+                        <td>$1540</td>
+                        <td>            
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="editar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="duplicar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="eliminar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr class="par">
+                        <td>00002</td>
+                        <td>Paulo Londra</td>
+                        <td>Antel</td>
+                        <td>Antel Arena</td>
+                        <td>07/12/2019</td>
+                        <td>21:00</td>
+                        <td>$1000</td>
+                        <td>            
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="editar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="duplicar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="eliminar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr class="inpar">
+                        <td>00003</td>
+                        <td>BackStreet Boys</td>
+                        <td>Antel</td>
+                        <td>Antel Arena</td>
+                        <td>08/03/2020</td>
+                        <td>19:00</td>
+                        <td>$2220</td>
+                        <td>            
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="editar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="duplicar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="eliminar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr class="par">
+                        <td>00004</td>
+                        <td>Gala 85 aniversario</td>
+                        <td>Sodre</td>
+                        <td>Auditorio Sodre</td>
+                        <td>24/10/2019</td>
+                        <td>20:00</td>
+                        <td>$160</td>
+                        <td>            
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="editar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="duplicar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="eliminar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr class="inpar">
+                        <td>00005</td>
+                        <td>Manon</td>
+                        <td>Sodre</td>
+                        <td>Auditorio Sodre</td>
+                        <td>12/12/2019</td>
+                        <td>20:00</td>
+                        <td>$160</td>
+                        <td>            
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="editar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="duplicar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="eliminar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr class="par">
+                        <td>00006</td>
+                        <td>MVD Comics</td>
+                        <td>Sodre</td>
+                        <td>Auditorio Sodre</td>
+                        <td>16/05/2020</td>
+                        <td>12:00</td>
+                        <td>$420</td>
+                        <td>            
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="editar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="duplicar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="eliminar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr class="inpar">
+                        <td>00007</td>
+                        <td>Epica</td>
+                        <td>La Trastienda</td>
+                        <td>La Trastienda</td>
+                        <td>29/11/2019</td>
+                        <td>21:00</td>
+                        <td>$1080</td>
+                        <td>            
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="editar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="duplicar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="eliminar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr class="par">
+                        <td>00008</td>
+                        <td>Pequeño 77</td>
+                        <td>La Trastienda</td>
+                        <td>La Trastienda</td>
+                        <td>08/11/2019</td>
+                        <td>21:00</td>
+                        <td>$480</td>
+                        <td>            
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="editar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="duplicar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="eliminar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr class="inpar">
+                        <td>00009</td>
+                        <td>Tarja Turunen</td>
+                        <td>La Trastienda</td>
+                        <td>La Trastienda</td>
+                        <td>14/12/2019</td>
+                        <td>21:00</td>
+                        <td>$1290</td>
+                        <td>            
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="editar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="duplicar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="eliminar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr class="par">
+                        <td>00010</td>
+                        <td>Uruguay/Hungria</td>
+                        <td>FIFA</td>
+                        <td>Ferenc Puskas, Budapest, Hungría</td>
+                        <td>$1360</td>
+                        <td>15/11/2019</td>
+                        <td>16:45</td>
+                        <td>            
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="editar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="duplicar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="eliminar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr class="inpar">
+                        <td>00011</td>
+                        <td>Rac/Ram</td>
+                        <td>AUF</td>
+                        <td>ParqueOsvaldoRoberto</td>
+                        <td>25/10/2019</td>
+                        <td>16:00</td>
+                        <td>$250</td>
+                        <td>            
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="editar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="duplicar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="eliminar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr class="par">
+                        <td>00012</td>
+                        <td>Wan/Juv</td>
+                        <td>AUF</td>
+                        <td>AlfredoVictorViera</td>
+                        <td>25/10/2019</td>
+                        <td>16:00</td>
+                        <td>$250</td>
+                        <td>            
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="editar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="duplicar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                        <td>
+                            <nav>
+                                <ul>
+                                    <li><a href="#" id="eliminar"></a></li>
+                                </ul>
+                            </nav>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                    </tr>
+                </tbody>
+            </table>
+            <nav id="contenedorFlecha">
+                <ul>
+                    <li id="pag1"><p>1</p></li>
+                    <li id="pag2"><p>2</p></li>
+                    <li id="pag3"><p>3</p></li>
+                    <li id="flecha"><a href="#"><img src="img/flecha.png"></a></li>
+                </ul>
+            </nav>
+        </section>
+    </body>
+</html>

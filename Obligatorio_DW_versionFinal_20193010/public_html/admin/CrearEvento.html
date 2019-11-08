@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Pow!Ticket - Crear Eventos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="pow, pow!, Pow!Ticket, Pow!Ticket, ticket, espectaculo, concierto, deporte, conferencia, noticia">
+        <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header class="hdrListYCrEv">
+            <figure id="logo">
+                <img id="ilogo" src="img/logo.png" alt="Logo PowTicket" title="PowTicket">
+                <!--figcaption>PowTicket</figcaption-->
+            </figure>
+            <nav>
+                <p>Hola,<strong>Nombre de Usuario</strong></p>
+                <ul>
+                    <li><a href=../index.html>Salir</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <nav class="menuVertical">
+                <ul>
+                    <li><a href="#">DASHBOARD</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#" class="activo">CREAR EVENTOS</a></li>
+                </ul>
+                <ul>
+                    <li><a href=listado.html>LISTADO DE EVENTOS</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">REPORTES</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">DESTACADOS</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">AGENTES DE VENTA</a></li>
+                </ul>
+            </nav>
+        </main>
+        <section id="secCrearEvento">
+            <section id="seccForm1">
+                <p>Administrador > Crear Evento</p>
+                <h1>CREAR EVENTO</h1>
+                <form id="form1"> 
+                    <p>Campos obligatorios (*)</p>
+                    <fieldset id="fieldset1">
+                        <label>Nombre del evento(*)</label>
+                        <input type="text" placeholder="Show">
+                        <label>Organizador(*)</label>
+                        <select><option>opcion 1</option></select>
+                        <label>Lugar(*)</label>
+                        <input type="text" placeholder="Antel Arena">
+                        <label id="labelfecha">Dia(*)</label>
+                        <label id="labelhora">Hora(*)</label>
+                        <input type="date" id="inputfecha">
+                        <input type="time" id="inputhora">
+                        <label>Imagen</label>
+                        <input type="file" id="btnAttach">
+                        <input type="submit" id="submitform" value="INGRESAR">
+                    </fieldset>
+                    <fieldset id="fieldset2">
+                        <input type="checkbox" id="inputcheckbox" value="destacar" name="destacar">
+                        <label for="inputcheckbox">Destacar</label>
+                        <label class="precio">Precio 1(*)</label>
+                        <input type="number" class="number">
+                        <label class="precio">Precio 2</label>
+                        <input type="number" class="number">
+                        <label class="precio">Precio 3</label>
+                        <input type="number" class="number">
+                        <label for="masprecios">Mas Precios</label>
+                        <input type="radio" value="Si" name="masprecios" checked id="radiosi"><label for="radiosi" id="labelSi">Si</label>
+                        <input type="radio" value="No" name="masprecios" id="radiono"><label for="radiono" id="labelNo">No</label>
+                    </fieldset>
+                </form>
+            </section>
+            <section id="seccForm2">
+                <figure>
+                    <img src="img/logo.png" alt="Logo PowTicket" title="PowTicket">
+                </figure>
+
+            </section>
+
+
+        </section>
+
+    </body>
+</html>
